@@ -1,20 +1,18 @@
-#include "main.h"
-/**
- * main - print _putchar
- * is written by mbah
- * Return: 0
- */
+int _putchar(char c);
 
-int main(void)
-{
-_putchar('_');
-_putchar('p');
-_putchar('u');
-_putchar('t');
-_putchar('c');
-_putchar('h');
-_putchar('a');
-_putchar('r');
-_putchar('\n');
-return (0);
+int main(void) {
+    char str[] = "_putchar\n";
+
+    for (int i = 0; str[i] != '\0'; i++) {
+        _putchar(str[i]);
+    }
+
+    return 0;
+}
+
+int _putchar(char c) {
+    // Code to output the character 'c'
+    // You would need to replace this with the actual mechanism
+    // for outputting a character in your environment
+    return c; // Return the character as an integer
 }
