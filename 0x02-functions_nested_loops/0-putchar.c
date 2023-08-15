@@ -1,15 +1,20 @@
-int _puchar(char c);
-int main(void) {
-	char str[] = "-puchar\n";
+#include "main.h"
+/**
+ * main - print _putchar
+ * is written by mbah
+ * Return: 0
+ */
 
-	for (int i = 0; str[i] ! = '\o'; i++) {
-		-puchar(str[i]);
-
-		{
-			return 0;
-	}
-	int -putchar(char c) {
-	
-	return c;
-	
-	}
+int main(void)
+{
+_putchar('_');
+_putchar('p');
+_putchar('u');
+_putchar('t');
+_putchar('c');
+_putchar('h');
+_putchar('a');
+_putchar('r');
+_putchar('\n');
+return (0);
+}
