@@ -1,21 +1,19 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * main - Entry point
+ * _pow_recursion - Returns the value of x raised to the power of y.
+ * @x: The base.
+ * @y: The exponent.
  *
- * Return: Always 0 (Success).
+ * Return: The result of x raised to the power of y.
  */
-int main(void)
+int _pow_recursion(int x, int y)
 {
-	int base = 2;
-	int exponent = 5;
-	int result = _pow_recursion(base, exponent);
+	if (y < 0)
+		return (-1);
 
-	if (result != -1)
-		printf("%d raised to the power of %d is %d\n", base, exponent, result);
-	else
-		printf("Error: Cannot calculate negative exponent\n");
+	if (y == 0)
+		return (1);
 
-	return (0);
+	return (x * _pow_recursion(x, y - 1));
 }
