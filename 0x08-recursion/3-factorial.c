@@ -6,6 +6,7 @@
  *
  * Return: The factorial of n, or -1 on error.
  */
+
 int factorial(int n)
 {
 	if (n < 0)
